@@ -20,7 +20,7 @@
 		</div>
 	</svelte:fragment>
 
-	<div class="flex-1 flex justify-center text-white gap-2 md:gap-10">
+	<div class="flex-1 flex justify-center text-white text-xs md:text-sm gap-2 md:gap-10">
 		<span>Signs</span>
 		<span>Props</span>
 		<span>Shows</span>
