@@ -1,14 +1,21 @@
 <script lang="ts">
-	import LoginContainer from '$lib/components/containers/LoginContainer.svelte';
-	import LoginFormContainer from '$lib/components/containers/LoginFormContainer.svelte';
+	import GetInspiredButton from '$lib/components/buttons/GetInspiredButton.svelte';
+	import HomeContainer from '$lib/components/containers/HomeContainer.svelte';
+	import AppBar from '$lib/components/content/AppBar.svelte';
 
 	import { policyPage } from '$utils/pages';
 </script>
 
-<LoginContainer>
-	<LoginFormContainer label="Welcome, loading assets...">
-		<p class="text-sm">
-			<a class="anchor text-tertiary-500" href={policyPage}>Privacy Policy</a>
-		</p>
-	</LoginFormContainer>
-</LoginContainer>
+<HomeContainer>
+	<AppBar />
+	<div class="m-10 md:m-32">
+		<div class="text-white">
+			<h1 class="h1">Handcrafted light animations</h1>
+			<h1 class="h1">built with passion to</h1>
+			<h1 class="h1">suit your needs</h1>
+		</div>
+		<div class="mt-5">
+			<GetInspiredButton />
+		</div>
+	</div>
+</HomeContainer>

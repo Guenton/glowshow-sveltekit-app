@@ -1,6 +1,6 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
-	import IconRestart from '~icons/mdi/restart';
+	import IconUser from '~icons/fa6-solid/user';
 
 	export let disabled = false;
 
@@ -8,7 +8,6 @@
 	const click = () => dispatch('click');
 </script>
 
-<button class="btn px-6 variant-soft-tertiary" {disabled} on:click={click}>
-	<IconRestart />
-	<span>Restart</span>
+<button class="btn btn-icon btn-icon-sm !bg-transparent" {disabled} on:click={click}>
+	<span class="text-primary-500"><IconUser /></span>
 </button>
