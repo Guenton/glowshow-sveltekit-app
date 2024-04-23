@@ -4,7 +4,7 @@
 <div class="h-screen">
 	<!-- Small Screen -->
 	<div class="block md:hidden">
-		<div class="h-screen flex flex-col bg-cover bg-center bg-no-repeat bg-fixed xmas-background">
+		<div class="h-screen flex flex-col bg-cover bg-center bg-no-repeat xmas-background">
 			<div class="h-72 w-full bg-surface-900">
 				<slot />
 			</div>

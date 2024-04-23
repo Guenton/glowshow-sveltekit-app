@@ -1,10 +1,13 @@
 <script lang="ts">
 	import GetInspiredButton from '$lib/components/buttons/GetInspiredButton.svelte';
+	import MeetUsButton from '$lib/components/buttons/MeetUsButton.svelte';
 	import ShowMeButton from '$lib/components/buttons/ShowMeButton.svelte';
 	import HomeContainer from '$lib/components/containers/HomeContainer.svelte';
 	import InspireContainer from '$lib/components/containers/InspireContainer.svelte';
+	import MeetUsContainer from '$lib/components/containers/MeetUsContainer.svelte';
 	import XmasContainer from '$lib/components/containers/XmasContainer.svelte';
 	import AppBar from '$lib/components/content/AppBar.svelte';
+	import GuenTonBar from '$lib/components/content/GuenTonBar.svelte';
 
 	import { policyPage } from '$utils/pages';
 </script>
@@ -45,3 +48,16 @@
 		</div>
 	</div>
 </XmasContainer>
+<MeetUsContainer>
+	<div class="m-10 md:ml-0 md:mt-32">
+		<div class="text-white">
+			<h1 class="h1">Would you like</h1>
+			<h1 class="h1">to know who</h1>
+			<h1 class="h1">we are?</h1>
+		</div>
+		<div class="mt-5">
+			<MeetUsButton />
+		</div>
+	</div>
+</MeetUsContainer>
+<GuenTonBar />
