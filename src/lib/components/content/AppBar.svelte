@@ -8,35 +8,36 @@
 	import FavoritesFab from '../buttons/FavoritesFab.svelte';
 	import OrdersFab from '../buttons/OrdersFab.svelte';
 	import SignInFab from '../buttons/SignInFab.svelte';
+	import { goto } from '$app/navigation';
 </script>
 
 <AppBar background="bg-transparent">
 	<svelte:fragment slot="lead">
-		<div class="block md:hidden">
+		<a href="/" class="block md:hidden">
 			<LogoSq />
-		</div>
-		<div class="hidden md:block">
+		</a>
+		<a href="/" class="hidden md:block">
 			<Logo />
-		</div>
+		</a>
 	</svelte:fragment>
 
 	<div class="flex-1 flex justify-center text-white text-xs md:text-sm gap-2 md:gap-10">
-		<span>Signs</span>
-		<span>Props</span>
-		<span>Shows</span>
-		<span>Contact</span>
+		<a href="/signs">Signs</a>
+		<a href="/props">Props</a>
+		<a href="/shows">Shows</a>
+		<a href="/contact">Contact</a>
 	</div>
 
 	<svelte:fragment slot="trail">
 		<div class="block md:hidden">
-			<OrdersFab />
-			<FavoritesFab />
+			<OrdersFab on:click={() => goto('/orders')} />
+			<FavoritesFab on:click={() => goto('/favorites')} />
 			<SignInFab />
 		</div>
 		<div class="hidden md:block">
-			<OrdersButton />
-			<FavoritesButton />
-			<SignInButton />
+			<OrdersButton on:click={() => goto('/orders')} />
+			<FavoritesButton on:click={() => goto('/favorites')} />
+			<SignInButton on:click={() => goto('/')} />
 		</div>
 	</svelte:fragment>
 </AppBar>

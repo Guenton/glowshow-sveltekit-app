@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { invalidateAll } from '$app/navigation';
 	import { page } from '$app/stores';
+	import HomeButton from '$lib/components/buttons/HomeButton.svelte';
+	import HomeContainer from '$lib/components/containers/HomeContainer.svelte';
 
-	// import RestartButton from '$lib/components/buttons/RestartButton.svelte';
-	import LoginContainer from '$lib/components/containers/LoginContainer.svelte';
-	import LoginFormContainer from '$lib/components/containers/LoginFormContainer.svelte';
+	import AppBar from '$lib/components/content/AppBar.svelte';
+	import FlatAlert from '$lib/components/content/FlatAlert.svelte';
 	import { alertTextState, alertTypeState } from '$lib/store';
 
 	let errorMessage = $page.error?.message ?? '';
@@ -13,8 +13,17 @@
 	$: errorMessage && alertTypeState.set('error');
 </script>
 
-<LoginContainer>
-	<LoginFormContainer label="Oh Snap... an Error has occured">
-		<!-- <RestartButton on:click={invalidateAll} /> -->
-	</LoginFormContainer>
-</LoginContainer>
+<HomeContainer>
+	<AppBar />
+	<div class="m-10 md:m-32">
+		<div class="text-white">
+			<h1 class="h1">Oops... something went wrong</h1>
+			<h1 class="h1">please try again</h1>
+			<h1 class="h1">or let us know what happened</h1>
+		</div>
+		<div class="mt-5">
+			<HomeButton />
+		</div>
+	</div>
+	<FlatAlert />
+</HomeContainer>
