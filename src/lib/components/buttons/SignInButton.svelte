@@ -1,6 +1,6 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
-	import IconUser from '~icons/fa6-solid/user';
+	import IconAccount from '~icons/mdi/account';
 
 	export let disabled = false;
 
@@ -9,6 +9,6 @@
 </script>
 
 <button class="btn btn-sm !bg-transparent text-white" {disabled} on:click={click}>
-	<span class="text-primary-500"><IconUser /></span>
+	<span class="text-primary-500"><IconAccount /></span>
 	<span>Sign In</span>
 </button>

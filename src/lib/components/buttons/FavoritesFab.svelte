@@ -1,6 +1,6 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
-	import IconStar from '~icons/fa6-solid/star';
+	import IconStar from '~icons/mdi/star';
 
 	export let disabled = false;
 

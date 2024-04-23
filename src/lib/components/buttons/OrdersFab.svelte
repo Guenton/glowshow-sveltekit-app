@@ -1,6 +1,6 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
-	import IconCheckDouble from '~icons/fa6-solid/check-double';
+	import IconCheckDouble from '~icons/mdi/check-all';
 
 	export let disabled = false;
 
