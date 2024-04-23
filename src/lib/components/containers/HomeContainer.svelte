@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<div class="h-full">
+<div class="h-screen">
 	<!-- Small Screen -->
 	<div class="block md:hidden">
 		<div class="h-screen flex bg-cover bg-center bg-no-repeat bg-fixed home-background">
