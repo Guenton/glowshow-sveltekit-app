@@ -7,7 +7,9 @@
 	import AppBar from '$lib/components/content/AppBar.svelte';
 </script>
 
-<AppBar />
+<div class="w-full fixed">
+	<AppBar />
+</div>
 <ShowsContainer>
 	<div class="m-10 md:m-32">
 		<div class="text-white">
