@@ -27,6 +27,6 @@
 
 <style>
 	.home-background {
-		background-image: url('/homeBackground.jpg');
+		background-image: url('/img/homeBackground.jpg');
 	}
 </style>

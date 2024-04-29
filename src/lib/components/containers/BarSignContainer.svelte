@@ -35,6 +35,6 @@
 
 <style>
 	.xmas-background {
-		background-image: url('/img/xmasBackground.jpg');
+		background-image: url('/img/barSignBackground.jpg');
 	}
 </style>

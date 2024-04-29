@@ -1,6 +1,6 @@
 <script>
-	let srcLight = '/logoLight.png';
-	let srcDark = '/logoDark.png';
+	let srcLight = '/img/logoLight.png';
+	let srcDark = '/img/logoDark.png';
 </script>
 
 <div class="block dark:hidden">

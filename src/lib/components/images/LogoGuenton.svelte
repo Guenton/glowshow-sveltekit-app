@@ -1,6 +1,6 @@
 <script>
-	let srcLight = '/guentonLight.png';
-	let srcDark = '/guentonDark.png';
+	let srcLight = '/img/guentonLight.png';
+	let srcDark = '/img/guentonDark.png';
 </script>
 
 <a class="block dark:hidden" href="https://www.guenton.com" target="_blank">

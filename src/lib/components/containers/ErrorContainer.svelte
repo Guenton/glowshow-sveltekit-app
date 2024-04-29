@@ -27,6 +27,6 @@
 
 <style>
 	.error-background {
-		background-image: url('/errorBackground.jpg');
+		background-image: url('/img/errorBackground.jpg');
 	}
 </style>

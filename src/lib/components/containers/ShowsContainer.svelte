@@ -29,6 +29,6 @@
 
 <style>
 	.shows-background {
-		background-image: url('/showsBackground.jpg');
+		background-image: url('/img/showsBackground.jpg');
 	}
 </style>

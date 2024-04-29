@@ -31,6 +31,6 @@
 
 <style>
 	.inspire-background {
-		background-image: url('/inspireBackground.jpg');
+		background-image: url('/img/inspireBackground.jpg');
 	}
 </style>

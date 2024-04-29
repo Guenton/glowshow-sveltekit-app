@@ -31,6 +31,6 @@
 
 <style>
 	.meet-us-background {
-		background-image: url('/meetUsBackground.jpg');
+		background-image: url('/img/meetUsBackground.jpg');
 	}
 </style>
