@@ -4,25 +4,33 @@
 <div class="h-screen">
 	<!-- Small Screen -->
 	<div class="block md:hidden">
-		<div class="h-screen flex flex-col bg-cover bg-center bg-no-repeat bg-fixed xmas-background">
-			<div class="h-72 w-full bg-surface-900">
-				<slot />
-			</div>
+		<div
+			class="h-screen flex flex-col bg-cover bg-center bg-no-repeat bg-fixed meet-guenton-background"
+		>
 			<div
 				class="flex-1 h-full bg-gradient-to-b from-surface-900 via-surface-900/0 to-surface-900"
 			/>
+			<div class="h-72 w-full bg-surface-900">
+				<slot />
+			</div>
 		</div>
 	</div>
 
 	<!-- Large Screen -->
 	<div class="hidden md:block">
-		<div class="h-screen flex flex-col bg-cover bg-no-repeat bg-fixed xmas-background">
+		<div class="h-screen flex flex-col">
+			<!-- Header Section -->
 			<div class="h-10 w-full bg-surface-900" />
+			<!-- Content Section -->
 			<div
 				class="flex-1 h-full bg-gradient-to-b from-surface-900 via-surface-900/10 to-surface-900"
 			>
 				<div class="flex-1 flex h-full">
-					<div class="flex-1 bg-gradient-to-r from-surface-900 via-surface-900/10 to-surface-900" />
+					<!-- Left Half -->
+					<div class="flex-1 flex m-10 bg-cover meet-guenton-background">
+						<div class="flex-1 h-full pl-10 bg-gradient-to-r from-surface-900 to-transparent" />
+					</div>
+					<!-- Right Half -->
 					<div class="flex-1 bg-surface-900">
 						<slot />
 					</div>
@@ -34,7 +42,7 @@
 </div>
 
 <style>
-	.xmas-background {
-		background-image: url('/img/xmasBackground.jpg');
+	.meet-guenton-background {
+		background-image: url('/img/meetGuentonBackground.jpg');
 	}
 </style>

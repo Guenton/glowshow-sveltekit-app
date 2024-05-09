@@ -1,11 +1,11 @@
 <script>
 	import { goto } from '$app/navigation';
-	import HomeButton from '$lib/components/buttons/HomeButton.svelte';
 	import LetsTalkButton from '$lib/components/buttons/LetsTalkButton.svelte';
 	import BarSignContainer from '$lib/components/containers/BarSignContainer.svelte';
-	import ErrorContainer from '$lib/components/containers/ErrorContainer.svelte';
 	import ShowsContainer from '$lib/components/containers/ShowsContainer.svelte';
+	import ChristmasContainer from '$lib/components/containers/ChristmasContainer.svelte';
 	import AppBar from '$lib/components/content/AppBar.svelte';
+	import ShowMeButton from '$lib/components/buttons/ShowMeButton.svelte';
 </script>
 
 <div class="w-full fixed">
@@ -37,3 +37,15 @@
 		</div>
 	</div>
 </BarSignContainer>
+<ChristmasContainer>
+	<div class="m-10 mt-32 md:m-32">
+		<div class="text-white">
+			<h1 class="h1">Is it beginning to look</h1>
+			<h1 class="h1">a lot like Christmas?</h1>
+			<h1 class="h1">See our season catalog.</h1>
+		</div>
+		<div class="mt-5">
+			<ShowMeButton />
+		</div>
+	</div>
+</ChristmasContainer>
