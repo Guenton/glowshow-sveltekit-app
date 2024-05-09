@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import GetInspiredButton from '$lib/components/buttons/GetInspiredButton.svelte';
 	import MeetUsButton from '$lib/components/buttons/MeetUsButton.svelte';
 	import ShowMeButton from '$lib/components/buttons/ShowMeButton.svelte';
@@ -8,8 +9,6 @@
 	import XmasContainer from '$lib/components/containers/XmasContainer.svelte';
 	import AppBar from '$lib/components/content/AppBar.svelte';
 	import GuenTonBar from '$lib/components/content/GuenTonBar.svelte';
-
-	import { policyPage } from '$utils/pages';
 </script>
 
 <HomeContainer>
@@ -21,7 +20,7 @@
 			<h1 class="h1">suit your needs</h1>
 		</div>
 		<div class="mt-5">
-			<GetInspiredButton />
+			<GetInspiredButton on:click={() => goto('/contact')} />
 		</div>
 	</div>
 </HomeContainer>
@@ -56,7 +55,7 @@
 			<h1 class="h1">we are?</h1>
 		</div>
 		<div class="mt-5">
-			<MeetUsButton />
+			<MeetUsButton on:click={() => goto('/contact')} />
 		</div>
 	</div>
 </MeetUsContainer>
