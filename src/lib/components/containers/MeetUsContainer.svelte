@@ -14,17 +14,17 @@
 	<!-- Large Screen -->
 	<div class="hidden md:block">
 		<div class="h-screen flex flex-col bg-cover bg-center bg-no-repeat bg-fixed meet-us-background">
-			<div class="h-10 w-full bg-surface-900" />
+			<div class="h-10 w-full bg-surface-900"></div>
 			<div
 				class="flex-1 flex h-full bg-gradient-to-b from-surface-900 via-surface-900/5 to-surface-900"
 			>
-				<div class="h-full w-32 bg-gradient-to-r from-surface-900 to-surface-900/5" />
+				<div class="h-full w-32 bg-gradient-to-r from-surface-900 to-surface-900/5"></div>
 				<div class="flex-1">
 					<slot />
 				</div>
-				<div class="h-full w-32 bg-gradient-to-l from-surface-900 to-surface-900/5" />
+				<div class="h-full w-32 bg-gradient-to-l from-surface-900 to-surface-900/5"></div>
 			</div>
-			<div class="h-10 w-full bg-surface-900" />
+			<div class="h-10 w-full bg-surface-900"></div>
 		</div>
 	</div>
 </div>

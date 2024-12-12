@@ -20,7 +20,7 @@
 	<div class="hidden md:block">
 		<div class="h-screen flex flex-col">
 			<!-- Header Section -->
-			<div class="h-10 w-full bg-surface-900" />
+			<div class="h-10 w-full bg-surface-900"></div>
 			<!-- Content Section -->
 			<div
 				class="flex-1 h-full bg-gradient-to-b from-surface-900 via-surface-900/10 to-surface-900"
@@ -32,11 +32,11 @@
 					</div>
 					<!-- Right Half -->
 					<div class="flex-1 flex m-10 bg-cover meet-hendrik-background">
-						<div class="flex-1 h-full pr-10 bg-gradient-to-l from-surface-900 to-transparent" />
+						<div class="flex-1 h-full pr-10 bg-gradient-to-l from-surface-900 to-transparent"></div>
 					</div>
 				</div>
 			</div>
-			<div class="h-10 w-full bg-surface-900" />
+			<div class="h-10 w-full bg-surface-900"></div>
 		</div>
 	</div>
 </div>
