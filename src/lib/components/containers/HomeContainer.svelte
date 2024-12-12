@@ -17,7 +17,7 @@
 			</video>
 
 			<div
-				class="flex-1 h-full bg bg-gradient-to-b from-surface-900 via-surface-900/30 to-surface-900"
+				class="flex-1 h-full bg bg-gradient-to-b from-surface-900 via-surface-900/50 to-surface-900"
 			>
 				<slot />
 			</div>
@@ -45,7 +45,7 @@
 			</video>
 
 			<div
-				class="flex-1 h-full bg bg-gradient-to-b from-surface-900 via-surface-900/30 to-surface-900"
+				class="flex-1 h-full bg bg-gradient-to-b from-surface-900 via-surface-900/60 to-surface-900"
 			>
 				<slot />
 			</div>
